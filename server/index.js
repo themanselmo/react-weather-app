@@ -19,6 +19,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.use('/api/cities', require('./api/cities'));
+app.use('/api/weather', require('./api/weather'));
 
 // make express responsive to requests by 
 // listening on a port number
